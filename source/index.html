@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="">
+    <title>stasis</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <!--removeIf(production)-->
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-image: url( "preview/preview/index-mobile.png" );
+      }
+
+      @media (min-width: 750px) {
+        HTML {
+          background-image: url("preview/preview/index.png");
+        }
+      }
+    </style>
+    <link href="preview/pixel-glass/styles.css" rel="stylesheet">
+    <script src="preview/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
+    <!--endRemoveIf(production)-->
+  </head>
+  <body class="page  page--unauthorized">
+    <div style="height: 0; width: 0; position: absolute; visibility: hidden" class="symbols">
+      <!-- inject:svg --><!-- endinject -->
+    </div>
+
+    <header class="main-header">
+
+      Start
+      <svg width="160" height="160">
+        <use xlink:href="#reserves"></use>
+      </svg>
+    </header>
+
+    <main class="main-content">
+    </main>
+
+    <footer class="main-footer">
+    </footer>
+
+    <!--<script src="js/main-nav.min.js"></script>-->
+  </body>
+</html>
