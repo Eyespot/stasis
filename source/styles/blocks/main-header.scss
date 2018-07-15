@@ -1,0 +1,17 @@
+.main-header {
+  height: 40px;
+
+  @media (min-width: $tablet) {
+    height: 70px;
+  }
+
+  &__button {
+    top: 20px;
+    left: 20px;
+
+    @media (min-width: $tablet) {
+      top: 46px;
+      left: 50px;
+    }
+  }
+}

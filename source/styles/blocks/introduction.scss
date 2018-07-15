@@ -1,0 +1,96 @@
+.introduction {
+  padding-top: 76px;
+  width: 100%;
+  background-image: url("../img/graphic-mobile@1x.png");
+  background-position: right -40px;
+  background-size: 320px 540px;
+  background-repeat: no-repeat;
+
+  @media (max-width: 767px) {
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/graphic-mobile@2x.png");
+    }
+  }
+
+  @media (min-width: $tablet) {
+    padding-top: 94px;
+    background-image: url("../img/graphic@1x.png");
+    background-position: center 8px;
+    background-size: 1440px 722px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/graphic@2x.png");
+    }
+  }
+
+  &__title {
+    margin: 46px auto 0;
+    width: 198px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+
+    @media (min-width: $tablet) {
+      margin-top: 44px;
+      padding-left: 24px;
+      width: auto;
+      font-size: 36px;
+    }
+  }
+
+  &__mobile-variable-word {
+
+    @media (min-width: $tablet) {
+      @include visually-hidden;
+    }
+  }
+
+  &__variable-word {
+
+    @media (max-width: 767px) {
+      @include visually-hidden;
+    }
+  }
+
+  &__slogan {
+    margin: 34px auto 0;
+    padding-left: 20px;
+    width: 454px;
+    text-align: center;
+    font-size: 24px;
+
+    @media (max-width: 767px) {
+      @include visually-hidden;
+    }
+  }
+
+  &__proceed {
+    position: relative;
+    margin-top: 144px;
+    left: 50%;
+    transform: translateX(-14px);
+    padding: 0;
+    width: 28px;
+    height: 21px;
+    outline: none;
+    border: none;
+    background-image: url("../img/chevron-down.svg");
+    background-size: 28px 21px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+
+    @media (min-width: $tablet) {
+      margin-top: 152px;
+      width: 64px;
+      height: 64px;
+      transform: translateX(-18px);
+      border-radius: 50%;
+      border: 1px solid $btn-blue;
+      background-image: url("../img/chevron-down-thin.svg");
+      background-size: 22px;
+      background-position: center 22px;
+    }
+  }
+}

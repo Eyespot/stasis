@@ -1,0 +1,20 @@
+.main-logo {
+  position: relative;
+  height: 133px;
+
+  @media (min-width: $tablet) {
+    height: 222px;
+  }
+
+  img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-92px);
+
+    @media (min-width: $tablet) {
+      width: 306px;
+      height: 222px;
+      transform: translateX(-141px);
+    }
+  }
+}
