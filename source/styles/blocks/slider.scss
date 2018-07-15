@@ -1,0 +1,88 @@
+.slider {
+  padding-top: 24px;
+
+  &__arrows {
+    margin: 0 auto;
+    width: 280px;
+
+    @media (min-width: $tablet) {
+      margin-top: 34px;
+      margin-left: 100px;
+    }
+  }
+
+  &__arrow {
+    padding: 0;
+    width: 15px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    svg {
+      fill: #345972;
+    }
+  }
+
+  &__arrow-previous {
+    margin-right: 16px;
+  }
+
+  &__features-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media(min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__feature {
+    margin-top: 23px;
+    margin-bottom: 34px;
+    outline: 1px solid green;
+
+    @media (max-width: 767px) {
+      &:nth-of-type(n+3) {
+        @include visually-hidden;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      width: 619px;
+
+      &:not(:nth-of-type(2n)) {
+        margin-right: 134px;
+      }
+    }
+  }
+
+  &__feature-title {
+    margin: 0 auto;
+    width: 280px;
+    font-size: 16px;
+    font-weight: 400;
+
+    @media (min-width: $tablet) {
+      width: auto;
+    }
+  }
+
+  &__feature-content {
+    margin: 18px auto 0;
+    width: 283px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+
+    @media (min-width: $tablet) {
+      width: auto;
+    }
+  }
+}

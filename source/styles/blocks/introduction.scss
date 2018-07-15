@@ -5,6 +5,9 @@
   background-position: right -40px;
   background-size: 320px 540px;
   background-repeat: no-repeat;
+  transition: transform .7s;
+  transition-timing-function: ease;
+  transform: translateX(300px);
 
   @media (max-width: 767px) {
 
@@ -67,6 +70,7 @@
 
   &__proceed {
     position: relative;
+    display: block;
     margin-top: 144px;
     left: 50%;
     transform: translateX(-14px);

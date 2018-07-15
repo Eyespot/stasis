@@ -100,7 +100,8 @@ gulp.task("copy", function() {
     "source/media/**/*",
     "source/*.html",
     "source/lib/**/*",
-    "source/preview/**/*"
+    "source/preview/**/*",
+    "source/styles/fullpage.css"
   ], {
     base: "source"
   })

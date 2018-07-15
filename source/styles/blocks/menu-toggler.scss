@@ -1,16 +1,17 @@
 .menu-toggler {
-  position: relative;
+  //position: relative;
   padding: 0;
   width: 20px;
   height: 20px;
   outline: none;
   border: none;
   background-color: transparent;
+  z-index: 1;
 
   svg {
-    position: absolute;
-    top: 0;
-    left: 0;
+    //position: absolute;
+    //top: 0;
+    //left: 0;
     fill: #345972;
   }
 }
