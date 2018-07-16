@@ -101,7 +101,8 @@ gulp.task("copy", function() {
     "source/*.html",
     "source/lib/**/*",
     "source/preview/**/*",
-    "source/styles/fullpage.css"
+    "source/styles/fullpage.css",
+		"source/favicon.ico"
   ], {
     base: "source"
   })
