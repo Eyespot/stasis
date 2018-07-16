@@ -1,13 +1,10 @@
 .introduction {
-  padding-top: 76px;
+  padding-top: 93px;
   width: 100%;
   background-image: url("../img/graphic-mobile@1x.png");
-  background-position: right -40px;
+  background-position: right -23px;
   background-size: 320px 540px;
   background-repeat: no-repeat;
-  transition: transform .7s;
-  transition-timing-function: ease;
-  transform: translateX(300px);
 
   @media (max-width: 767px) {
 
@@ -17,9 +14,9 @@
   }
 
   @media (min-width: $tablet) {
-    padding-top: 94px;
+    padding-top: 164px;
     background-image: url("../img/graphic@1x.png");
-    background-position: center 8px;
+    background-position: center 23%;
     background-size: 1440px 722px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -84,6 +81,13 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: transparent;
+    transition: opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.7s;
+
+    &:hover {
+      opacity: 0.5;
+    }
 
     @media (min-width: $tablet) {
       margin-top: 152px;
@@ -95,6 +99,13 @@
       background-image: url("../img/chevron-down-thin.svg");
       background-size: 22px;
       background-position: center 22px;
+      transition: background-color;
+      transition-timing-function: ease;
+      transition-duration: .7s;
+
+      &:hover {
+        background-color: $btn-blue;
+      }
     }
   }
 }

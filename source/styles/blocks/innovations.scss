@@ -1,7 +1,4 @@
 .innovations {
-  transition: transform .7s;
-  transition-timing-function: ease;
-  transform: translateX(300px);
 
   &__title {
     margin: 0 auto;
@@ -11,6 +8,7 @@
     font-size: 22px;
     font-weight: 400;
     color: $title-color;
+    word-break: break-word;
 
     @media (min-width: $tablet) {
       margin-top: 112px;
@@ -44,7 +42,8 @@
     @media (min-width: $tablet) {
       margin-top: 33px;
       margin-left: 148px;
-      width: 877px;
+      width: auto;
+      max-width: 877px;
       font-size: 18px;
     }
 
@@ -64,6 +63,5 @@
   }
 
   &__slider {
-    outline: 1px solid black;
   }
 }

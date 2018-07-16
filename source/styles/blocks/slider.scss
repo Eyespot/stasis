@@ -18,6 +18,10 @@
     border: none;
     outline: none;
     background-color: transparent;
+    cursor: pointer;
+    transition: opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.7s;
 
     &:hover {
       opacity: 0.5;
@@ -32,34 +36,39 @@
     margin-right: 16px;
   }
 
-  &__features-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  &__features {
 
     @media(min-width: $tablet) {
       display: flex;
+      justify-content: space-between;
       flex-wrap: wrap;
+      padding-left: 150px;
+      padding-right: 20px;
+    }
+  }
+
+  &__features-column {
+
+    @media (max-width: 767px) {
+      &:nth-of-type(n+2) {
+        @include visually-hidden;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 49%;
     }
   }
 
   &__feature {
     margin-top: 23px;
     margin-bottom: 34px;
-    outline: 1px solid green;
-
-    @media (max-width: 767px) {
-      &:nth-of-type(n+3) {
-        @include visually-hidden;
-      }
-    }
 
     @media (min-width: $tablet) {
-      width: 619px;
-
-      &:not(:nth-of-type(2n)) {
-        margin-right: 134px;
-      }
+      margin-bottom: 42px;
     }
   }
 
@@ -70,7 +79,68 @@
     font-weight: 400;
 
     @media (min-width: $tablet) {
+      position: relative;
+      padding-top: 9px;
+      padding-left: 68px;
+      padding-bottom: 12px;
       width: auto;
+      font-size: 24px;
+      line-height: 1.13;
+    }
+
+    &::before {
+
+      @media (min-width: $tablet) {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 55px;
+        height: 44px;
+        background-repeat: no-repeat;
+        background-size: 44px;
+      }
+    }
+    
+    &--blockchain {
+
+      &::before {
+
+        @media (min-width: $tablet) {
+          background-image: url("../img/blockchain.svg");
+        }
+      }
+    }
+
+    &--stability {
+
+      &::before {
+
+        @media (min-width: $tablet) {
+          background-image: url("../img/stability.svg");
+        }
+      }
+    }
+
+    &--bullhorn {
+
+      &::before {
+
+        @media (min-width: $tablet) {
+          background-image: url("../img/bullhorn.svg");
+        }
+      }
+    }
+
+    &--reserves {
+
+      &::before {
+
+        @media (min-width: $tablet) {
+          background-image: url("../img/reserves.svg");
+          background-size: 53px;
+        }
+      }
     }
   }
 
@@ -83,6 +153,7 @@
 
     @media (min-width: $tablet) {
       width: auto;
+      font-size: 18px;
     }
   }
 }

@@ -1,0 +1,8 @@
+.section {
+  transition: transform .7s;
+  transition-timing-function: ease;
+
+  &--pushed {
+    transform: translateX(300px);
+  }
+}

@@ -8,7 +8,6 @@
     <title>stasis</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <!--<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">-->
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/fullpage.css" />
     <!--removeIf(production)-->
@@ -17,15 +16,15 @@
       HTML {
         background-repeat: no-repeat;
         background-position: 50% 0;
-        /*background-image: url( "preview/preview/index-mobile.png" );*/
-        background-image: url( "preview/preview/innovations-mobile.png" );
+        background-image: url( "preview/preview/index-mobile.png" );
+        /*background-image: url( "preview/preview/innovations-mobile.png" );*/
         background-size: 100%;
       }
 
       @media (min-width: 768px) {
         HTML {
-          /*background-image: url("preview/preview/index.png");*/
-          background-image: url( "preview/preview/innovations.png" );
+          background-image: url("preview/preview/index.png");
+          /*background-image: url( "preview/preview/innovations.png" );*/
         }
       }
     </style>
@@ -39,21 +38,17 @@
       <!-- inject:svg --><!-- endinject -->
     </div>
 
-    <!--<header class="main-header">-->
-      <!---->
-    <!--</header>-->
-
     <main class="main-content">
-      <button class="main-header__button  menu-toggler" type="button">
+      <button class="main-content__button  menu-toggler" type="button">
         <svg width="20" height="20">
           <use xlink:href="#menu-hamburger"></use>
         </svg>
       </button>
 
-      <nav class="main-navigation">
+      <nav class="main-navigation  main-navigation--closed">
         <header class="main-navigation__header">
           <div class="main-navigation__logo">
-            <a href="#introduction"><img src="img/logo-menu.svg" alt="stasis-logo" width="118" height="32"></a>
+            <a class="main-navigation__logo-link" href="#introduction"><img src="img/logo-menu.svg" alt="stasis-logo" width="118" height="32"></a>
           </div>
 
           <button class="main-navigation__button  menu-toggler" type="button">
@@ -64,11 +59,25 @@
         </header>
 
         <ul id="menu" class="main-navigation__list">
-          <li class="main-navigation__item"><a href="#">how it works</a></li>
-          <li class="main-navigation__item"><a href="#">government relations</a></li>
-          <li class="main-navigation__item"><a href="#">stasis tokens</a></li>
-          <li data-menuanchor="innovations" class="main-navigation__item"><a href="#innovations">innovations and traditions</a></li>
-          <li class="main-navigation__item"><a href="#">contact</a></li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#">how it works</a>
+          </li>
+
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#">government relations</a>
+          </li>
+
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#">stasis tokens</a>
+          </li>
+
+          <li data-menuanchor="innovations" class="main-navigation__item">
+            <a class="main-navigation__link" href="#innovations">innovations and traditions</a>
+          </li>
+
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#">contact</a>
+          </li>
         </ul>
       </nav>
 
@@ -110,41 +119,42 @@
           </div>
 
           <div class="slider__slide">
-            <ul class="slider__features-list">
-              <li class="slider__feature">
-                <h2 class="slider__feature-title">Using Blockchain</h2>
+            <div class="slider__features">
+              <div class="slider__features-column">
+                <div class="slider__feature">
+                  <h2 class="slider__feature-title  slider__feature-title--blockchain">Using Blockchain</h2>
 
-                <p class="slider__feature-content">STASIS platform is based on the Blockchain technology, the main innovation of the recent years which raised the world of finance to the new level of security and transparency.</p>
-              </li>
+                  <p class="slider__feature-content">STASIS platform is based on the Blockchain technology, the main innovation of the recent years which raised the world of finance to the new level of security and transparency.</p>
+                </div>
 
-              <li class="slider__feature">
-                <h2 class="slider__feature-title">Stability</h2>
+                <div class="slider__feature">
+                <h2 class="slider__feature-title  slider__feature-title--stability">Stability</h2>
 
                 <p class="slider__feature-content">The cost of one unit of the new currency issued on the STASIS platform is tied to the underlying national currency, for example, to the euro, tenge or the US dollar.</p>
-              </li>
+              </div>
+              </div>
 
-              <li class="slider__feature">
-                <h2 class="slider__feature-title">Recognition</h2>
+              <div class="slider__features-column">
+                <div class="slider__feature">
+                  <h2 class="slider__feature-title  slider__feature-title--bullhorn">Recognition</h2>
 
-                <p class="slider__feature-content">STASIS platform and issue of cryptocurrency are supported by government authorities, and reserves are the subject of a regular audit. The implementation of distributed ledger technology aka blockchain can help to reimagine the annual and quarterly audits by making the process as real-time and low-cost as possible.</p>
-              </li>
+                  <p class="slider__feature-content">STASIS platform and issue of cryptocurrency are supported by government authorities, and reserves are the subject of a regular audit. The implementation of distributed ledger technology aka blockchain can help to reimagine the annual and quarterly audits by making the process as real-time and low-cost as possible.</p>
+                </div>
 
-              <li class="slider__feature">
-                <h2 class="slider__feature-title">Reserves</h2>
+                <div class="slider__feature">
+                <h2 class="slider__feature-title  slider__feature-title--reserves">Reserves</h2>
 
                 <p class="slider__feature-content">Each STASIS stable coin token  is fully convertible with its fiat equivalent on a 1:1 value basis The reserves are managed according to strict “money market” mandate by the respectful institution.</p>
-              </li>
-            </ul>
+              </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       </div>
     </main>
 
-    <footer class="main-footer">
-    </footer>
-
-    <!--<script src="js/main-nav.min.js"></script>-->
+    <script src="js/main-nav.min.js"></script>
     <script type="text/javascript" src="lib/fullpage.min.js"></script>
     <script type="text/javascript" src="js/full-page-setting.min.js"></script>
   </body>

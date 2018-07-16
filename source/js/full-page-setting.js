@@ -51,7 +51,7 @@ var myFullpage = new fullpage('#fullpage', {
 	// paddingTop: '3em',
 	paddingBottom: '10px',
 	// fixedElements: '#header, .footer',
-	responsiveWidth: 0,
+	responsiveWidth: 1200,
 	responsiveHeight: 0,
 	responsiveSlides: false,
 	parallax: false,

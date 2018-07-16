@@ -111,7 +111,7 @@ gulp.task("copy", function() {
 gulp.task("removeC", function () {
   return gulp
       .src('build/*.html')
-      .pipe(removeCode({ production: false }))
+      .pipe(removeCode({ production: true }))
       .pipe(gulp.dest('build'));
 });
 
