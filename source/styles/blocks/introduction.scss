@@ -6,7 +6,7 @@
   background-size: 320px 540px;
   background-repeat: no-repeat;
 
-  @media (max-width: 767px) {
+  @media (max-width: $pre-tablet) {
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/graphic-mobile@2x.png");
@@ -48,7 +48,7 @@
 
   &__variable-word {
 
-    @media (max-width: 767px) {
+    @media (max-width: $pre-tablet) {
       @include visually-hidden;
     }
   }
@@ -60,22 +60,20 @@
     text-align: center;
     font-size: 24px;
 
-    @media (max-width: 767px) {
+    @media (max-width: $pre-tablet) {
       @include visually-hidden;
     }
   }
 
   &__proceed {
-    position: relative;
     display: block;
+    position: relative;
     margin-top: 144px;
     left: 50%;
     transform: translateX(-14px);
     padding: 0;
     width: 28px;
     height: 21px;
-    outline: none;
-    border: none;
     background-image: url("../img/chevron-down.svg");
     background-size: 28px 21px;
     background-position: center;
@@ -104,7 +102,7 @@
       transition-duration: .7s;
 
       &:hover {
-        background-color: $btn-blue;
+        background-color: $blue;
       }
     }
   }

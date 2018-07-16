@@ -28,7 +28,7 @@
     }
 
     svg {
-      fill: #345972;
+      fill: $dark-blue;
     }
   }
 
@@ -49,7 +49,7 @@
 
   &__features-column {
 
-    @media (max-width: 767px) {
+    @media (max-width: $pre-tablet) {
       &:nth-of-type(n+2) {
         @include visually-hidden;
       }

@@ -1,8 +1,7 @@
 .innovations {
 
   &__title {
-    margin: 0 auto;
-    margin-top: 45px;
+    margin: 45px auto 0;
     width: 320px;
     padding-left: 19px;
     font-size: 22px;
@@ -19,7 +18,7 @@
 
     &--eng {
 
-      @media (max-width: 767px) {
+      @media (max-width: $pre-tablet) {
         display: none;
       }
     }
@@ -49,7 +48,7 @@
 
     &--eng {
 
-      @media (max-width: 767px) {
+      @media (max-width: $pre-tablet) {
         display: none;
       }
     }
@@ -60,8 +59,5 @@
         display: none;
       }
     }
-  }
-
-  &__slider {
   }
 }
